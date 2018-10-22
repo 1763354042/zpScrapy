@@ -15,6 +15,14 @@ SPIDER_MODULES = ['zpScrapy.spiders']
 NEWSPIDER_MODULE = 'zpScrapy.spiders'
 
 
+ITEM_PIPELINES = {
+    'zpScrapy.pipelines.TextPipeline':300,
+    'zpScrapy.pipelines.MongoPipeline':400,
+}
+
+
+MONGO_URI = 'localhost'
+MONGO_DB = 'zpScrpy'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zpScrapy (+http://www.yourdomain.com)'
 
