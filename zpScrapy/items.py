@@ -15,3 +15,13 @@ class QuoteItem(scrapy.Item):
     author = scrapy.Field()
     tags = scrapy.Field()
 
+class DajieItem(scrapy.Item):
+    keyWord = scrapy.Field()
+    companyName = scrapy.Field()
+    positionName = scrapy.Field()
+    workYear = scrapy.Field()
+    education = scrapy.Field()
+    city = scrapy.Field()
+    salary = scrapy.Field()
+
+
