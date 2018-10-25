@@ -7,21 +7,19 @@
 from scrapy.exceptions import DropItem
 import pymongo
 
-class TextPipeline(object):                                   #对爬虫所获取item进行基本操作
-    if __name__ != 'quotes':
-        pass
-    def __init__(self):
-        self.limit = 50
-
-    def process_item(self, item, spider):
-        if item['text']:
-            if len(item['text'])>self.limit:
-                item['text'] = item['text'][0:self.limit].rstrip() + '...'
-                return item
-            else:
-                return DropItem("Missing Text")
-
-        return item
+# class TextPipeline(object):                                   #对爬虫所获取item进行基本操作
+#     def __init__(self):
+#         self.limit = 50
+#
+#     def process_item(self, item, spider):
+#         if item['text']:
+#             if len(item['text'])>self.limit:
+#                 item['text'] = item['text'][0:self.limit].rstrip() + '...'
+#                 return item
+#             else:
+#                 return DropItem("Missing Text")
+#
+#         return item
 
 
 class MongoPipeline(object):

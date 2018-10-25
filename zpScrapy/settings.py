@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'zpScrapy.spiders'
 
 
 ITEM_PIPELINES = {
-    'zpScrapy.pipelines.TextPipeline':300,              #优先级，数字越小越先被调用
+    # 'zpScrapy.pipelines.TextPipeline':300,              #优先级，数字越小越先被调用
     'zpScrapy.pipelines.MongoPipeline':400,
 }
 
