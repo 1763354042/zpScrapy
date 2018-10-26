@@ -25,3 +25,12 @@ class DajieItem(scrapy.Item):
     salary = scrapy.Field()
 
 
+
+class BossZpItem(scrapy.Item):
+    keyWord = scrapy.Field()
+    companyName = scrapy.Field()
+    positionName = scrapy.Field()
+    workYear = scrapy.Field()
+    education = scrapy.Field()
+    city = scrapy.Field()
+    salary = scrapy.Field()
