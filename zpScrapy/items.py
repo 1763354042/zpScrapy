@@ -26,6 +26,8 @@ class DajieItem(scrapy.Item):
 
 
 
+
+
 class BossZpItem(scrapy.Item):
     keyWord = scrapy.Field()
     companyName = scrapy.Field()
